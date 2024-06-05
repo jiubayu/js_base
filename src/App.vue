@@ -1,15 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
+    app
+    <clipboard />
+    <keyboard/>
+    <ShortURL />
+    <ScreenShot/> 
+</template> 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Clipboard from './components/Clipboard.vue';
+import Keyboard from './components/Keyboard.vue';
+import ShortURL from './components/ShortURL.vue';
+import ScreenShot from './components/WebRTCScreenShot.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Clipboard,
+    Keyboard,
+    ShortURL,
+    ScreenShot
   }
 }
 </script>
